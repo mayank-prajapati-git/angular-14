@@ -1,0 +1,50 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar.topbar {
+  background-color: #fafafa;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  height: 70px;
+}
+
+.branding {
+  padding: 20px;
+}
+
+.content {
+  height: 100%;
+  overflow: auto;
+}
+
+::ng-deep ng-scrollbar {
+  --scrollbar-width: 8px;
+  --scrollbar-track-color: #f0f0f0;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+}
+
+
+.mat-drawer.sidebarNav {
+  width: 270px;
+  flex-shrink: 0;
+  transition: width .4s cubic-bezier(.25, .8, .25, 1);
+  position: absolute;
+  overflow-x: hidden;
+}

@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>Query 1</h1>
+<div mat-dialog-content>
+
+  <div fxLayout="row wrap">
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+    </div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+    </div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+    </div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+    <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+    <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+    </div>
+
+    <br>
+    <mat-form-field fxFlex.md="100%" fxFlex.lg="100%" fxFlex.xl="100%" fxFlex.sm="100%">
+      <textarea matInput placeholder="Resolution" type="text" maxlength="1000" rows="4"></textarea>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions align="center">
+  <button mat-flat-button color="primary" (click)="onClickMarkClosed()">Mark Closed</button>
+  <button mat-flat-button [mat-dialog-close]="true" cdkFocusInitial>Close</button>
+</div>

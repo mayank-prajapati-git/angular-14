@@ -1,0 +1,23 @@
+<!-- Form Layout -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Form Layout</h4>
+    <form [formGroup]="retailStoreForm" (ngSubmit)="onSubmit()" autocomplete="off">
+      <mat-form-field class="w-100 fs-16">
+        <input matInput formControlName="name" placeholder="Store Name" type="text" maxlength="25">
+        <mat-error *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+          Store Name is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16">
+        <input matInput formControlName="name" placeholder="Address" type="text" maxlength="25">
+        <mat-error *ngIf="submitted && f.address.errors?.required" class="invalid-feedback">
+          Address is required
+        </mat-error>
+      </mat-form-field>
+  
+      <button mat-button class="btn btn-info fw-normal" (click)="onSubmit()" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

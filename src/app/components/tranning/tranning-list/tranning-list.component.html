@@ -1,0 +1,56 @@
+<mat-card>
+  <mat-card-content class="mat-card-content">
+    <div fxLayout="row wrap" fxLayoutGap="30px grid">
+      <mat-form-field fxFlex.md="30%" fxFlex.lg="30%" fxFlex.xl="30%" fxFlex.sm="100%">
+        <mat-label>Select Tranning Id</mat-label>
+        <mat-select>
+          <mat-option>--Select--</mat-option>
+          <mat-option *ngFor="let criteria of criteriaList" [value]="criteria.value">
+            {{criteria.text}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div fxFlex.md="30%" fxFlex.lg="30%" fxFlex.xl="30%" fxFlex.sm="100%">
+        <button mat-flat-button color="primary" (click)="onClickAdd()"> <mat-icon>add</mat-icon>Create Tranning
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content class="mat-card-content">
+
+    <div fxLayout="row wrap">
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+      </div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+      </div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+      </div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Mobile No</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">8465478995</div>
+
+      <div fxFlex.md="40%" fxFlex.lg="40%" fxFlex.xl="40%" fxFlex.sm="100%" class="p-2 bd-highlight">Email</div>
+      <div fxFlex.md="60%" fxFlex.lg="60%" fxFlex.xl="60%" fxFlex.sm="100%" class="p-2 bd-highlight">Flexitem@gmail.com
+      </div>
+    </div>
+    <br>
+    <button mat-flat-button color="primary" (click)="onClickEdit()">Edit</button>
+  </mat-card-content>
+</mat-card>

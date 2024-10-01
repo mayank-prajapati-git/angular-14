@@ -1,0 +1,47 @@
+<!-- Form Layout -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Tranning Invite</h4>
+    <form [formGroup]="tranningForm" (ngSubmit)="onSubmit()" autocomplete="off">
+
+      <div fxLayout="row wrap" fxLayoutGap="10px grid">
+        <mat-form-field fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%" fxFlex.sm="100%">
+          <mat-label>Trainning Title</mat-label>
+          <mat-select>
+            <mat-option>--Select--</mat-option>
+            <mat-option *ngFor="let criteria of criteriaList" [value]="criteria.value">
+              {{criteria.text}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row wrap" fxLayoutGap="10px grid">
+        <mat-form-field fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%" fxFlex.sm="100%">
+          <mat-label>Send Invite To</mat-label>
+          <mat-select>
+            <mat-option>--Select--</mat-option>
+            <mat-option *ngFor="let criteria of criteriaList" [value]="criteria.value">
+              {{criteria.text}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row wrap" fxLayoutGap="10px grid">
+        <mat-form-field fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%" fxFlex.sm="100%">
+          <mat-label>Send Update To</mat-label>
+          <mat-select>
+            <mat-option>--Select--</mat-option>
+            <mat-option *ngFor="let criteria of criteriaList" [value]="criteria.value">
+              {{criteria.text}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div fxFlex.md="20%" fxFlex.lg="20%" fxFlex.xl="20%" fxFlex.sm="20%">
+          <button mat-flat-button color="primary" class="me-8 mb-8"> <mat-icon>add</mat-icon>Add</button>
+        </div>
+      </div>
+
+      <button mat-flat-button color="primary" class="me-8 mb-8" (click)="onSubmit()" type="submit">Send</button>
+    </form>
+  </div>
+</div>

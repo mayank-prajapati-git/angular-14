@@ -1,0 +1,25 @@
+<!-- Form Layout -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">{{trannngId ? "Edit" : "Create"}}Tranning</h4>
+    <form [formGroup]="tranningForm" (ngSubmit)="onSubmit()" autocomplete="off">
+
+      <mat-form-field class="w-100 fs-16">
+        <input matInput formControlName="name" placeholder="Store Name" type="text" maxlength="25">
+        <mat-error *ngIf="submitted && f.name.errors?.required" class="invalid-feedback">
+          Store Name is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16">
+        <input matInput formControlName="name" placeholder="Address" type="text" maxlength="25">
+        <mat-error *ngIf="submitted && f.address.errors?.required" class="invalid-feedback">
+          Address is required
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary" class="me-8 mb-8" (click)="onSubmit()" type="submit">Submit</button>
+      <button mat-flat-button color="warn" class="me-8 mb-8" (click)="onClickCancel()">Cancel</button>
+    </form>
+  </div>
+</div>
